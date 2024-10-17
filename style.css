@@ -1,0 +1,232 @@
+body{
+    background-color: var(--body);
+    color: white;
+}
+:root{
+    --body: #2c5c85;
+    --nav-bar: #1b4064;
+    --secondary: #3c91c9;
+    --gold: #FFD700;
+    --teal: #5febcf ;
+}
+/*.......................................... nav bar start ................................... */
+#nav{
+    background-color: var(--nav-bar);
+}
+#logo-img{
+    display: block;
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+}
+#cinema-label{
+    margin-top: 4px;
+    color: var(--gold);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+#login-btn,
+#logout-btn{
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.644);
+}
+.my-account{
+    display: none;
+}
+.nav-link.active{
+    color: var(--gold) !important;
+}
+#nav-order > li > a{
+    color: white;
+    padding: 8px 30px;
+    margin: 0 10px;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav-order > li > a:hover,
+.nav-item a i:hover,
+.nav-item button:hover,
+#login-btn:hover,
+#logout-btn:hover{
+    color: var(--gold) !important;
+}
+.navbar-toggler{
+    border: none;
+    color: white;
+    box-shadow: none;
+    outline: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+@media screen and (max-width: 767px){
+    #nav-icon{
+        display: flex;
+    }
+    .navbar-nav li{
+        padding: 8px 0;
+    }
+    #nav-icon{
+        border-top: 1px solid rgb(242, 240, 240);
+        padding-left: 20px;
+        padding-top: 15px;
+        margin: 10px 0;
+    }
+    .my-account{
+        display: block;
+        margin-left: 12px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #nav-order > li > a{
+        margin: 0;
+        padding:0 20px;
+    }
+}
+@media screen and (max-width: 348px){
+    #cinema-label > h5{
+        font-size: 12pt !important;
+    }
+    #nav-order > li > a{
+        font-size: 11pt;
+    }
+}
+
+.offcanvas{
+    background-color: var(--nav-bar);
+    color: white;
+}
+.offcanvas > hr{
+    margin-top: -5px;
+}
+.user-name{
+    color: var(--teal);
+    font-size: 18pt !important;
+}
+#profile-info{
+    margin-top: -12px;
+}
+#profile-info form{
+    border-left: 2px solid var(--teal);
+    border-right: 2px solid var(--teal);
+    padding: 10px 0 15px;
+    border-radius: 10px;
+}
+.offcanvas button i:hover,
+#profile-info > div > i,
+#info-link > div > i,
+#info-link > a:hover{
+    color: var(--teal) !important;
+}
+#profile-info > div > h5,
+#info-link > div > h5{
+    font-weight: bold;
+}
+/*.......................................... nav bar end ................................... */
+
+
+/*.......................................... snack page start ................................... */
+.carousel-item > img{
+    display: block;
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    margin: auto;
+}
+.carousel-indicators{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.127);
+    padding: 0 30px;
+    border-radius: 8px;
+}
+.carousel-indicators .active {
+    background-color: var(--gold);
+}
+@media screen and (max-width: 575px){
+    .carousel-item > img{
+        position: relative;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+    .carousel-indicators{
+        background-color: rgba(255, 255, 255, 0.127);
+        padding: 0 10px;
+        border-radius: 8px;
+    }
+    .carousel-indicators button {
+        width: 15px !important;
+        height: 3px !important; 
+    }
+    
+}
+/*.......................................... snack page end ................................... */
+
+/*.......................................... snack categories start ................................... */
+#snack-category{
+    margin: 60px auto;
+}
+.combo-snack h4{
+    color: var(--gold);
+    font-weight: bold;
+}
+.combo-snack img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+.combo-snack .mySwiper .swiper-wrapper{
+    padding-bottom: 40px;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--gold);
+    opacity: 1;
+}
+.combo-snack .mySwiper .swiper-slide > div{
+    padding: 10px;
+    background-color: var(--nav-bar);
+}
+.combo-snack a:hover{
+    color: var(--gold) !important;
+}
+@media screen and (max-width: 475px){
+    .combo-snack img{
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .combo-content h5,
+    .combo-content label{
+        font-size: 11pt;
+    }
+    .combo-content button{
+        padding: 3px 6px;
+        font-size: 9pt;
+    }
+}
+@media screen and (max-width: 373px){
+    .combo-content > div{
+        display: block !important;
+        width: 100%;
+        margin-top: 0 !important;
+    }
+    .combo-content button{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .combo-snack > h4{
+        font-size: 13pt;
+    }
+    .combo-snack .swiper-wrapper{
+        text-align: center;
+    }
+}
+/*.......................................... snack categories end ................................... */
