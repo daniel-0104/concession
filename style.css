@@ -254,10 +254,10 @@ body{
     .drinks a:hover{
         color: white !important;
     }
-    .combo-snack a:focus,
-    .popcorn-snack a:focus,
-    .sweet-snack a:focus,
-    .drinks a:focus{
+    .combo-snack a:active,
+    .popcorn-snack a:active,
+    .sweet-snack a:active,
+    .drinks a:active{
         color: var(--gold) !important;
     }
     .combo-content span{
