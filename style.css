@@ -148,7 +148,7 @@ body{
     .carousel-item > img{
         position: relative;
         width: 100%;
-        height: 280px;
+        height: 270px;
         object-fit: cover;
     }
     .carousel-indicators{
@@ -208,6 +208,12 @@ body{
     .combo-content button{
         padding: 3px 6px;
         font-size: 9pt;
+    }
+    .combo-snack a:hover{
+        color: white;
+    }
+    .combo-snack a:active{
+        color: var(--gold) !important;
     }
 }
 @media screen and (max-width: 373px){
