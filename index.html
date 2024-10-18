@@ -23,14 +23,22 @@
 </head>
 <body>
     <!-- nav bar start-->
-    <nav class="navbar navbar-expand-md sticky-top shadow-sm" id="nav">
+    <nav class="navbar navbar-expand-md sticky-top shadow-sm d-flex" id="nav">
         <div class="container-fluid">
             <a href="index.html" class="d-flex align-items-center text-decoration-none">
                 <img src="image/IMG_20240924_142602_514.png" alt="" id="logo-img">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div class="d-flex align-items-center me-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="d-md-none d-flex ms-auto cart-button-mobile">
+                    <a href="" class="btn position-relative">
+                        <i class="fa-solid fa-cart-shopping text-white"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle text-dark badge rounded-pill bg-warning">10</span>
+                    </a>
+                </div>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto" id="nav-order">
                     <li class="nav-item">
@@ -47,7 +55,7 @@
                     </li>
                 </ul>
                 <div class="nav-item d-flex" id="nav-icon">
-                    <div class="d-inline me-5">
+                    <div class="d-inline me-5" id="cart-lap">
                         <a href="">
                             <button type="button" class="btn position-relative">
                                 <i class="fa-solid fa-cart-shopping text-white"></i>

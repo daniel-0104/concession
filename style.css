@@ -76,6 +76,9 @@ body{
         display: block;
         margin-left: 12px;
     }
+    #cart-lap{
+        display: none !important;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
     #nav-order > li > a{
@@ -148,7 +151,7 @@ body{
     .carousel-item > img{
         position: relative;
         width: 100%;
-        height: 270px;
+        height: 260px;
         object-fit: cover;
     }
     .carousel-indicators{
@@ -169,11 +172,10 @@ body{
     margin: 60px auto;
 }
 .combo-snack h4{
-    color: var(--gold);
     font-weight: bold;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.832);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.558);
     padding-bottom: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 .combo-snack img{
     display: block;
