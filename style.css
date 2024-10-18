@@ -151,7 +151,7 @@ body{
     .carousel-item > img{
         position: relative;
         width: 100%;
-        height: 260px;
+        height: 250px;
         object-fit: cover;
     }
     .carousel-indicators{
@@ -171,35 +171,69 @@ body{
 #snack-category{
     margin: 60px auto;
 }
-.combo-snack h4{
+.popcorn-snack,
+.sweet-snack,
+.drinks{
+    margin-top: 50px;
+}
+.combo-snack > h4,
+.popcorn-snack > h4,
+.sweet-snack > h4,
+.drinks > h4{
+    text-transform: uppercase;
     font-weight: bold;
     border-bottom: 1px solid rgba(255, 255, 255, 0.558);
     padding-bottom: 12px;
     margin-bottom: 16px;
 }
-.combo-snack img{
+.combo-snack img,
+.popcorn-snack img,
+.sweet-snack img,
+.drinks img{
     display: block;
     margin: auto;
     width: 100%;
     height: 230px;
     object-fit: cover;
 }
-.combo-snack .mySwiper .swiper-wrapper{
+.combo-snack .mySwiper .swiper-wrapper,
+.popcorn-snack .mySwiper .swiper-wrapper,
+.sweet-snack .mySwiper .swiper-wrapper,
+.drinks .mySwiper .swiper-wrapper{
     padding-bottom: 40px;
 }
 .swiper-pagination-bullet-active{
     background-color: var(--gold);
     opacity: 1;
 }
-.combo-snack .mySwiper .swiper-slide > div{
+.combo-snack .mySwiper .swiper-slide > div,
+.popcorn-snack .mySwiper .swiper-slide > div,
+.sweet-snack .mySwiper .swiper-slide > div,
+.drinks .mySwiper .swiper-slide > div{
     padding: 10px;
     background-color: var(--nav-bar);
 }
-.combo-snack a:hover{
+.combo-snack a:hover,
+.popcorn-snack a:hover,
+.sweet-snack a:hover,
+.drinks a:hover{
     color: var(--gold) !important;
 }
+.combo-content span{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.795);
+    top: 10px;
+    left: 10px;
+    background-color: var(--secondary);
+    border-radius: 5px 5px 5px 0;
+    padding: 3px 10px;
+    font-size: 10pt;
+}
 @media screen and (max-width: 475px){
-    .combo-snack img{
+    .combo-snack img,
+    .popcorn-snack img,
+    .sweet-snack img,
+    .drinks img{
         display: block;
         margin: auto;
         width: 100%;
@@ -214,11 +248,21 @@ body{
         padding: 3px 6px;
         font-size: 9pt;
     }
-    .combo-snack a:hover{
+    .combo-snack a:hover,
+    .popcorn-snack a:hover,
+    .sweet-snack a:hover,
+    .drinks a:hover{
         color: white;
     }
-    .combo-snack a:focus{
+    .combo-snack a:focus,
+    .popcorn-snack a:focus,
+    .sweet-snack a:focus,
+    .drinks a:focus{
         color: var(--gold) !important;
+    }
+    .combo-content span{
+        padding: 3px 8px;
+        font-size: 8pt;
     }
 }
 @media screen and (max-width: 373px){
@@ -233,10 +277,16 @@ body{
         text-align: center;
         margin-top: 10px;
     }
-    .combo-snack > h4{
+    .combo-snack > h4,
+    .popcorn-snack > h4,
+    .sweet-snack > h4,
+    .drinks > h4{
         font-size: 13pt;
     }
-    .combo-snack .swiper-wrapper{
+    .combo-snack .swiper-wrapper,
+    .popcorn-snack .swiper-wrapper,
+    .sweet-snack .swiper-wrapper,
+    .drinks .swiper-wrapper{
         text-align: center;
     }
 }
