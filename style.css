@@ -171,6 +171,9 @@ body{
 .combo-snack h4{
     color: var(--gold);
     font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.832);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 .combo-snack img{
     display: block;
