@@ -252,7 +252,7 @@ body{
     .popcorn-snack a:hover,
     .sweet-snack a:hover,
     .drinks a:hover{
-        color: white;
+        color: white !important;
     }
     .combo-snack a:focus,
     .popcorn-snack a:focus,
