@@ -48,35 +48,13 @@ var swiper = new Swiper(".mySwiper", {
 // ..................................................... combo swiper end ....................................
 
 
-// ...................................................... combo swiper start .................................
-// var swiper = new Swiper(".mySwiper2", {
-//   spaceBetween: 30,
-//   slidesPerView: 4,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   breakpoints: {
-//     0: {
-//         slidesPerView: 1,
-//     },
-//     300: {
-//       slidesPerView: 2,
-//       spaceBetween: 10,
-//     },
-//     519: {
-//       slidesPerView: 2,
-//     },
-//     694: {
-//         slidesPerView: 3,
-//         spaceBetween: 20,
-//     },
-//     963: {
-//       slidesPerView: 4,
-//     },
-//     1400: {
-//       slidesPerView: 5,
-//     }                          
-//   }
-// });
-// ..................................................... combo swiper end ....................................
+// ..................................................... select popcorn size start ....................................
+document.querySelectorAll('.size').forEach(function(item){
+  item.addEventListener('click',function(){
+    document.querySelectorAll('.size').forEach(function(li){
+      li.classList.remove('size-active');
+    });
+    this.classList.add('size-active');
+  });
+});
+// ..................................................... select popcorn size end ....................................

@@ -219,6 +219,9 @@ body{
 .drinks a:hover{
     color: var(--gold) !important;
 }
+.combo-content h5{
+    height: 40px;
+}
 .combo-content span{
     position: absolute;
     color: rgba(255, 255, 255, 0.795);
@@ -291,3 +294,66 @@ body{
     }
 }
 /*.......................................... snack categories end ................................... */
+
+
+/*.......................................... snack deatils start ................................... */
+#snack-back i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+#snack-detail{
+    background-color: var(--nav-bar);
+    margin: 20px auto 40px;
+    padding: 10px 20px 30px;
+    border-radius: 8px;
+}
+#snack-detail img{
+    width: 420px;
+    display: block;
+    margin: auto;
+    height: 400px;
+    object-fit: cover;
+}
+#snack-detail-content > div > h3,
+#snack-back i:hover{
+    color: var(--gold);
+}
+#snack-detail-content label{
+    font-size: 14pt;
+    margin-bottom: 4px;
+}
+#snack-detail-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#snack-detail-content ul li{
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.596);
+    padding: 6px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#snack-detail-content ul li:hover,
+#snack-detail-content ul li:active,
+.size-active{
+    background-color: #142b4be0 !important;
+}
+
+
+.input-group-btn button,
+#addCartBtn{
+    background-color: var(--gold);
+    color: black;
+}
+.input-group-btn button:hover,
+#addCartBtn:hover{
+    background-color: var(--gold);
+    color: black;
+}
+/*.......................................... snack deatils end ................................. */
