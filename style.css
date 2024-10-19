@@ -406,7 +406,7 @@ body{
     #snack-cart > .d-flex label{
         font-weight: bold;
         font-size: 10pt;
-        padding: 5px 20px !important;
+        padding: 1px 20px !important;
     }
 }
 /*.......................................... snack cart end ................................... */
