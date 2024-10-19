@@ -232,6 +232,10 @@ body{
     padding: 3px 10px;
     font-size: 10pt;
 }
+.cart-btn{
+    background-color: var(--gold);
+    color: black;
+}
 @media screen and (max-width: 475px){
     .combo-snack img,
     .popcorn-snack img,
@@ -294,6 +298,106 @@ body{
     }
 }
 /*.......................................... snack categories end ................................... */
+
+
+/*.......................................... snack cart start ................................... */
+#snack-cart{
+    background-color: var(--nav-bar);
+    margin-bottom: 60px;
+    border-radius: 8px;
+    padding: 20px;
+}
+#snack-cart > .d-flex{
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.651);
+    margin-bottom: 25px;
+}
+#snack-cart .d-flex > i{
+    color: var(--gold);
+}
+#snack-cart > .d-flex label{
+    background-color: var(--gold);
+    color: black;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+.cart-content{
+    height: 120px;
+    padding: 0 10px 10px;
+    margin: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+}
+.cart-content > .d-flex:nth-child(1){
+    width: 360px;
+}
+.cart-content img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.remove,
+.remove:hover,
+.remove:active{
+    background-color: red;
+    color: white;
+}
+.cart-details-ph{
+    display: none !important;
+}
+.cart-content-ph{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+}
+.cart-content-ph img{
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+@media screen and (max-width: 729px){
+    .cart-details{
+        display: none;
+    }
+    .cart-details-ph{
+        display: block;
+    }
+}
+@media screen and (max-width: 400px){
+    .cart-details-ph img{
+        width: 100px;
+        height: 100px;
+    }
+    .cart-details-ph h5{
+        font-size: 13pt;
+        font-weight: bold;
+    }
+    .cart-details-ph p{
+        font-size: 10pt;
+    }
+    #snack-cart{
+        padding: 20px 10px;
+    }
+    .cart-content-ph > div:nth-child(3){
+        margin-left: -14px;
+    }
+}
+@media screen and (max-width: 373px){
+    #snack-cart > .d-flex h4{
+        font-size: 13pt;
+    }
+    #snack-cart > .d-flex i{
+        margin-bottom: 5px;
+    }
+    #snack-cart > .d-flex label{
+        font-weight: bold;
+        font-size: 10pt;
+        padding: 0 20px !important;
+    }
+}
+/*.......................................... snack cart end ................................... */
 
 
 /*.......................................... snack deatils start ................................... */
