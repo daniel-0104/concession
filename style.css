@@ -394,16 +394,16 @@ body{
     }
 }
 @media screen and (max-width: 373px){
-    #snack-cart > .d-flex h4{
+    /* #snack-cart > .d-flex h4{
         font-size: 13pt;
-    }
+    } */
     #snack-cart > .d-flex i{
         margin-bottom: 5px;
     }
     #snack-cart > .d-flex label{
         font-weight: bold;
         font-size: 10pt;
-        padding: 0 20px !important;
+        padding: 10px 20px !important;
     }
 }
 /*.......................................... snack cart end ................................... */
