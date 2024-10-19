@@ -283,6 +283,7 @@ body{
         width: 100%;
         text-align: center;
         margin-top: 10px;
+        padding: 4px;
     }
     .combo-snack > h4,
     .popcorn-snack > h4,
@@ -357,12 +358,20 @@ body{
     border-radius: 8px;
     object-fit: cover;
 }
+#confirm-btn{
+    background-color: var(--gold);
+    color: black;
+}
 @media screen and (max-width: 729px){
     .cart-details{
         display: none;
     }
     .cart-details-ph{
-        display: block;
+        display: block !important;
+    }
+    #confirm-btn,
+    #clear-btn{
+        width: 100% !important;
     }
 }
 @media screen and (max-width: 400px){
