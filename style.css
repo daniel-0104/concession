@@ -344,9 +344,7 @@ body{
 .size-active{
     background-color: #142b4be0 !important;
 }
-
-
-.input-group-btn button,
+/* .input-group-btn button,
 #addCartBtn{
     background-color: var(--gold);
     color: black;
@@ -355,5 +353,52 @@ body{
 #addCartBtn:hover{
     background-color: var(--gold);
     color: black;
+} */
+@media screen and (max-width: 1200px){
+    #snack-detail img{
+        width: 350px;
+        height: 380px;
+    }
+}
+@media screen and (max-width: 768px){
+    #snack-detail img{
+        width: 100%;
+        height: 380px;
+    }
+    #snack-detail-content{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 400px){
+    #snack-detail img{
+        width: 100%;
+        height: 280px;
+    }
+    #snack-detail{
+        margin-top: 0 !important;
+        border-radius: 0 0 8px 8px;
+    }
+    #snack-detail-content h3{
+        font-size: 16pt;
+    }
+    #snack-detail-content p{
+        font-size: 11pt;
+    }
+    #snack-detail-content ul{
+        justify-content: left;
+        padding-left: 0;
+    }
+    #snack-detail-content ul li{
+        width: fit-content;
+        padding: 6px 20px;
+        margin-right: 10px;
+        font-size: 11pt;
+    }
+    .input-group{
+        margin-left: 15px !important;
+    }
+    #addCartBtn{
+        width: 100%;
+    }
 }
 /*.......................................... snack deatils end ................................. */
