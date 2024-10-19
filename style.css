@@ -322,6 +322,9 @@ body{
     padding: 0 15px;
     border-radius: 5px;
 }
+#snack-cart > .d-flex h4{
+    font-weight: bold;
+}
 .cart-content{
     height: 120px;
     padding: 0 10px 10px;
@@ -403,7 +406,7 @@ body{
     #snack-cart > .d-flex label{
         font-weight: bold;
         font-size: 10pt;
-        padding: 10px 20px !important;
+        padding: 5px 20px !important;
     }
 }
 /*.......................................... snack cart end ................................... */
