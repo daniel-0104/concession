@@ -656,3 +656,545 @@ body{
     }
 }
 /*.......................................... snack deatils end ................................. */
+
+
+/*............................................. snack payment start ................................ */
+/* #snack-order{
+    position: relative;
+    background-color: var(--nav-bar);
+    margin-left: 0;
+    margin-top: 40px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    border-left: 3px solid var(--teal);
+    border-right: 3px solid var(--teal);
+}
+#snack-order > div:first-child{
+    padding-bottom: 15px;
+    border-bottom: 1px dotted white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#snack-order > div:first-child label{
+    background-color: var(--gold);
+    color: black;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+#snack-order > p{
+    margin: -10px auto 28px;
+    color: rgba(193, 191, 191, 0.832);
+}
+#snack-order-content > .d-flex{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.snack-t-price{
+    color: var(--teal);
+}
+@media screen and (max-width: 415px){
+    #snack-order > div:first-child h5{
+        font-size: 13pt;
+    }
+}
+@media screen and (max-width: 373px){
+    #snack-order > div:first-child label{
+        font-weight: bold;
+        font-size: 10pt;
+        padding: 1px 20px !important;
+    }
+    #snack-order-content h6{
+        font-size: 12pt;
+    }
+    #snack-order > p,
+    #snack-order-content span,
+    #snack-order-content p{
+        font-size: 10pt !important;
+    }
+    #snack-order > div:last-child h5{
+        font-size: 14pt;
+    }
+} */
+/*............................................. snack payment end ................................ */
+
+
+
+/*.......................................... checkout start  ................................... */
+#back-to-seat{
+    width: 100%;
+    background-color: var(--nav-bar);
+    padding: 13px 25px;
+    position: fixed;
+    z-index: 1;
+}
+#back-to-seat button{
+    border: 1px solid var(--secondary);
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+    padding: 5px 20px;
+}
+#back-to-seat button:hover{
+    border: 1px solid var(--teal);
+    color: var(--teal);
+}
+#user-contact-info{
+    background-color: var(--nav-bar);
+    padding-bottom: 60px;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+#user-contact-info form input,
+#promo-code form input{
+    background-color: transparent;
+    color: var(--teal);
+}
+#user-contact-info form input::placeholder,
+#promo-code form input::placeholder{
+    color: white;
+}
+#user-contact-info form input:focus,
+#promo-code form input:focus{
+    box-shadow: none;
+    border: 1px solid var(--teal);
+}
+#user-contact-info a{
+    display: block;
+    width: fit-content;
+    float: right;
+    z-index: 1;
+    text-decoration: none;
+}
+#user-contact-info a button,
+#promo-code a button{
+    background-color: var(--secondary);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+    color: white;
+    font-weight: 600;
+    padding: 6px 30px;
+}
+#user-contact-info a button:hover,
+#promo-code a button:hover,
+#payment-picture a button:hover{
+    color: var(--nav-bar);
+}
+#user-contact-info a button:focus,
+#promo-code a button:focus,
+#payment-picture a button:focus{
+    border: 1px solid var(--secondary);
+}
+#offer-content ~ a > button:hover{
+    color: var(--teal);
+}
+
+#promo-code{
+    background-color: #163451;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+#promo-code i{
+    font-size: 13pt;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+#promo-code i:hover{
+    color: var(--teal) !important;
+}
+#promo-form{
+    display: none;
+    padding-bottom: 10px;
+}
+
+#booking-total{
+    background-color: var(--nav-bar);
+    padding-bottom: 25px;
+    border-radius: 10px;
+    margin-top: -30px;
+}
+#booking-total h5,
+#payment-option h5,
+#user-contact-info h5{
+    background-color: #142f48;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 20px 0 25px 30px;
+}
+#booking-total-content span{
+    font-size: 14pt;
+    margin-right: 10px;
+}
+#booking-total-content label,
+#taxes label{
+    font-size: 14pt;
+    font-weight: 500;
+}
+#total-price label:first-child{
+    font-size: 16pt;
+    font-weight: 600;
+}
+#total-price label:last-child{
+    font-size: 14pt;
+    font-weight: 700;
+    color: var(--teal);
+}
+
+#payment-option{
+    background-color: var(--nav-bar);
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+.custom-radio{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.custom-radio.active{
+    background-color: #f3eeee22
+}
+.custom-radio.inactive{
+    background-color: transparent;
+}
+.custom-radio label{
+    cursor: pointer;
+    width: 100%;
+}
+.custom-radio input[type="radio"]{
+    accent-color: rgba(216, 216, 216, 0.726);
+    cursor: pointer;
+    transform: scale(1.4);
+}
+.custom-radio input[type="radio"]:checked{
+    accent-color: var(--teal);
+}
+.payment-content{
+    color: white;
+    padding: 10px 30px;
+}
+
+#payment-picture{
+    background-color: var(--nav-bar);
+    padding: 20px 30px 30px 30px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+#edit-photo{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+}
+#edit-photo > div{
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    border: 1px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#edit-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#edit-photo label{
+    margin-top: 12px;
+    font-size: 13pt;
+    cursor: pointer;
+    color: var(--blue);
+}
+#edit-photo input{
+    display: none;
+}
+#payment-picture a button{
+    background-color: var(--secondary);
+    width: 100%;
+    margin-top: 30px;
+    font-size: 14pt;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+    color: white;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+#location-mb{
+    display: none;
+}
+#booking-summary{
+    position: relative;
+    background-color: var(--nav-bar);
+    margin-left: 0;
+    padding: 30px 20px;
+    border-radius: 8px;
+    border-left: 3px solid var(--teal);
+    border-right: 3px solid var(--teal);
+}
+#booking-summary > h5{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#booking-summary .d-flex:nth-child(2){
+    margin-top: -10px;
+}
+#booking-summary .d-flex img{
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+}
+/* #payment .row{
+    margin-top: -40px;
+} */
+#payment .col-lg-5{
+    /* position: fixed; */
+    /* height: 100vh; */
+    right: 0;
+    /* bottom: -80px; */
+    /* overflow-y: auto; */
+    /* z-index: 1000;  */
+}
+#payment .col-lg-7{
+    /* margin-top: 40px; */
+    background-color: var(--body);
+    /* box-shadow: 0 2px 7px rgba(0, 0, 0, 0.592); */
+    padding: 0 20px 40px 20px;
+    margin-left: -11px;
+    /* margin-bottom: -50px; */
+}
+#payment .item-right .up-border,
+#payment .item-right .down-border{
+    width: 40px;
+    height: 40px;
+    background-color: var(--body);
+    border-radius: 50%;
+    position: absolute;
+}
+#payment .item-right .up-border{
+    top: -22px;
+    right: 50%;
+    transform: translateX(50%);
+}
+#payment .item-right .down-border{
+    bottom: -22px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+#cancel-info{
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 991px){
+    #payment > div{
+        position: relative;
+    }
+    #booking-summary{
+        width: 500px;
+        margin: auto !important;
+    }
+    #payment .col-lg-7{
+       box-shadow: none;
+       margin-left: 0;
+       margin-bottom: 0;
+    }
+    #location-mb{
+        display: block;
+        /* margin-bottom: -20px; */
+    }
+    #cancel-info{
+        margin-top: 40px;
+    }
+    #location-lap{
+        display: none;
+    }
+    #back-to-seat{
+        display: none;
+        position: relative;
+        z-index: 0;
+    }
+    #payment-option > div{
+        padding: 0 10px !important;
+    }
+    .payment-content{
+        padding: 10px 20px;
+    }
+    .payment-content strong{
+        font-size: 11pt;
+    }
+    #payment-picture{
+        padding: 20px 20px 30px 20px !important;
+    }
+}
+@media screen and (max-width: 560px){
+    #booking-summary{
+        width: 400px;
+        margin: auto;
+    }
+    #booking-summary .d-flex:nth-child(4),
+    #booking-summary > div > div:last-child{
+        padding: 0 !important;
+    }
+    #payment .col-lg-7{
+        padding: 10px;
+    }
+    #booking-total h5,
+    #payment-option h5,
+    #user-contact-info h5{
+        background-color: #142f48;
+        padding: 20px 0 20px 20px;
+        font-size: 14pt;
+    }
+    #booking-total > div{
+        padding: 0 20px !important;
+    }
+    #booking-total-content span,
+    #booking-total-content label,
+    #taxes label,
+    #total-price label{
+        font-size: 13pt !important;
+    }
+    #booking-total{
+        padding-bottom: 20px;
+    }
+    #promo-code{
+        padding: 20px 20px 15px;
+    }
+    #offer-fy{
+        padding: 20px;
+    }
+    #promo-code h5,
+    #offer-fy h5{
+        font-size: 14pt;
+    }
+    #user-contact-info a button:hover,
+    #promo-code a button:hover,
+    #payment-picture a button:hover,
+    #offer-content ~ a > button:hover{
+        color: white;
+    }
+}
+@media screen and (max-width: 448px){
+    #booking-summary{
+        width: 100%;
+    }
+    #promo-form form > div{
+        width: 60% !important;
+    }
+    #promo-code a button{
+        background-color: var(--secondary);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+        color: white;
+        font-weight: 600;
+        padding: 6px 20px;
+    }
+    #offer-fy{
+        padding: 20px 30px 1px;
+    }
+}
+@media screen and (max-width: 414px){
+    #payment > div{
+        margin: 0 10px !important;
+    }
+    #booking-summary .d-flex:nth-child(2){
+        display: block !important;
+        width: 100%;
+    }
+    #booking-summary .d-flex:nth-child(2) > div{
+        margin-right: 0 !important;
+    }
+    #booking-summary hr{
+        display: none;
+    }
+    #cinema-name2{
+        margin-top: 15px;
+    }
+    #booking-summary .d-flex img{
+        display: block;
+        margin: auto;
+        width: 180px;
+        height: 250px;
+        object-fit: cover;
+    }
+    #booking-summary > h5{
+        font-size: 12pt
+    }
+    #booking-summary{
+        padding: 30px 10px;
+    }
+}
+@media screen and (max-width: 348px){
+    #booking-summary .d-flex img{
+        display: block;
+        margin: auto;
+        width: 130px;
+        height: 200px;
+        object-fit: cover;
+    }
+    #cinema-name2 > h5{
+        font-size: 13pt !important;
+    }
+    #cinema-name2 label{
+        padding: 0 9px !important;
+        font-size: 9pt !important;
+    }
+    #cinema-name2 ~ div > label,
+    #booking-summary > div .d-flex:nth-child(4) label,
+    #booking-summary > div > div:last-child label,
+    #ticket-ph-content .px-2 > .d-flex:nth-child(3) label,
+    #ticket-ph-content .px-2 > div:nth-child(4) label,
+    #ticket-ph-content .px-2 > div:last-child label{
+        font-size: 10pt;
+    }
+    #cinema-name2 ~ div > h6,
+    #booking-summary > div .d-flex:nth-child(4) h6,
+    #booking-summary > div > div:last-child h6,
+    #payment-picture .d-flex label,
+    #offer-content h6,
+    #offer-content p,
+    #cancel-info label,
+    #ticket-ph-content .px-2 > .d-flex:nth-child(3) h6,
+    #ticket-ph-content .px-2 > div:nth-child(4) h6,
+    #ticket-ph-content .px-2 > div:last-child h6{
+        font-size: 11pt !important;
+    }
+    #booking-total > h5,
+    #booking-total-content > div span,
+    #promo-code h5,
+    #user-contact-info > h5,
+    #payment-option > h5,
+    #edit-photo ~ a button,
+    #offer-fy h5{
+        font-size: 13pt !important;
+    }
+    #booking-total-content label,
+    #taxes label,
+    .promo-icon{
+        font-size: 12pt !important;
+    }
+    #offer-content{
+        display: block !important;
+        width: 100%;
+    }
+    #offer-content img{
+        display: none !important;
+    }
+    #offer-content > div:last-child{
+        margin-top: -110px;
+    }
+    #offer-fy{
+        padding-bottom: 3px !important;
+    }
+}
+/*.......................................... checkout end  ................................... */

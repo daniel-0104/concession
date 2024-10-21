@@ -21,386 +21,139 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+    /*............................................. snack payment start ................................ */
+#snack-order{
+    position: relative;
+    background-color: var(--nav-bar);
+    margin-left: 0;
+    margin-top: 40px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    border-left: 3px solid var(--teal);
+    border-right: 3px solid var(--teal);
+}
+#snack-order > div:first-child{
+    padding-bottom: 15px;
+    border-bottom: 1px dotted white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#snack-order > div:first-child label{
+    background-color: var(--gold);
+    color: black;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+#snack-order > p{
+    margin: -10px auto 28px;
+    color: rgba(193, 191, 191, 0.832);
+}
+#snack-order-content > .d-flex{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.snack-t-price{
+    color: var(--teal);
+}
+@media screen and (max-width: 415px){
+    #snack-order > div:first-child h5{
+        font-size: 13pt;
+    }
+}
+@media screen and (max-width: 373px){
+    #snack-order > div:first-child label{
+        font-weight: bold;
+        font-size: 10pt;
+        padding: 1px 20px !important;
+    }
+    #snack-order-content h6{
+        font-size: 12pt;
+    }
+    #snack-order > p,
+    #snack-order-content span,
+    #snack-order-content p{
+        font-size: 10pt !important;
+    }
+    #snack-order > div:last-child h5{
+        font-size: 14pt;
+    }
+}
+/*............................................. snack payment end ................................ */
+</style>
 <body>
-    <!-- nav bar start-->
-    <nav class="navbar navbar-expand-md sticky-top shadow-sm d-flex" id="nav">
-        <div class="container-fluid">
-            <a href="index.html" class="d-flex align-items-center text-decoration-none">
-                <img src="image/IMG_20240924_142602_514.png" alt="" id="logo-img">
-            </a>
-            <div class="d-flex align-items-center me-2">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="d-md-none d-flex ms-auto cart-button-mobile">
-                    <a href="" class="btn position-relative">
-                        <i class="fa-solid fa-cart-shopping text-white"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle text-dark badge rounded-pill bg-warning">10</span>
-                    </a>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav m-auto" id="nav-order">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Snacks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <div class="nav-item d-flex" id="nav-icon">
-                    <div class="d-inline me-5" id="cart-lap">
-                        <a href="">
-                            <button type="button" class="btn position-relative">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
-                                <span class="position-absolute top-0 start-100 translate-middle text-dark badge rounded-pill bg-warning">
-                                  10
-                                </span>
-                            </button>
-                        </a>
-                    </div>
-                    <div class="d-inline me-2">
-                        <a href="auth.html" class="btn text-white" role="button" id="login-btn">
-                            Login
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- nav bar end  -->
+    <!-- payment section start  -->
+    <section id="payment" class="mb-5">
+        <div class="mx-4">
 
-    <!-- snacks cart start  -->
-    <section id="snack-cart" class="container-lg mx-auto">
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center">
-                <i class="fa-solid fa-cart-arrow-down me-2 "></i>
-                <h4>My Cart</h4>
-            </div>
-            <label for="">4</label>
-        </div>
-        <div class="cart-details">
-            <div class="cart-content d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center">
-                    <img src="image/pop1.webp" class="d-block" alt="">
-                    <div class="ms-3">
-                        <h5>Butter Popcorn</h5>
-                        <label for="">3000 Ks</label>
-                        <p>Medium</p>
+            <div id="order-location4">
+                <div class="d-flex align-items-center justify-content-center">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="o-location-n">
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for=""><i class="fa-solid fa-check"></i></label>
+                        <label for=""><i class="fa-solid fa-check"></i></label>
+                        <label for=""><i class="fa-solid fa-check"></i></label>
+                        <label for="">4</label>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-around mt-1">
+                        <h6>Select Showtime</h6>
+                        <h6>Select Seats</h6>
+                        <h6>Select Snacks</h6>
+                        <h6>Confirm Payment</h6>
                     </div>
                 </div>
-                <div id="order-count-btn">
-                    <div class="d-flex align-items-center" style="width: 130px;">
-                        <div class="input-group quantity">
-                            <div class="input-group-btn">
-                                <button class="btn btn-minus btn-warning">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                            
-                            <input type="text" class="form-control bg-body-tertiary border-0 text-center" id="orderCount" value="1">
+            </div>
 
-                            <div class="input-group-btn">
-                                <button class="btn btn-plus btn-warning">
-                                    <i class="fa fa-plus"></i>
-                                </button>
+            <div class="row">
+                <div class="col-lg-5 order-lg-2">
+                    <div id="snack-order">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5>SNACKS</h5>
+                            <label for="">6</label>
+                        </div>
+                        <p>Before your movie starts, head to your theater's cinema pick-up food counter and grab your snacks.</p>
+                        <div id="snack-order-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold">Butter Popcorn</h6>
+                                    <span class="fs-6">Medium</span>
+                                    <p>Qty: 2</p>
+                                </div>
+                                <label for="">8000 Ks</label>
                             </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold">Chocolate Box</h6>
+                                    <p>Qty: 1</p>
+                                </div>
+                                <label for="">5000 Ks</label>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold">Coca Cola</h6>
+                                    <p>Qty: 3</p>
+                                </div>
+                                <label for="">6000 Ks</label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-4">
+                            <h5>Total Price : </h5>
+                            <h5 class="snack-t-price">19000 Ks</h5>
                         </div>
                     </div>
                 </div>
-                <div >
-                    <label>3000 Kyats</label>
-                </div>
-                <div >
-                    <button class="btn btn-sm btn-remove remove"><i class="fa fa-times"></i></button>
-                </div>
-            </div>
-            <div class="cart-content d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center">
-                    <img src="image/drinks2.jpg" class="d-block" alt="">
-                    <div class="ms-3">
-                        <h5>Pepsi</h5>
-                        <label for="">2000 Ks</label>
-                    </div>
-                </div>
-                <div id="order-count-btn" >
-                    <div class="d-flex align-items-center">
-                        <div class="input-group quantity" style="width: 130px;">
-                            <div class="input-group-btn">
-                                <button class="btn btn-minus btn-warning">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                            
-                            <input type="text" class="form-control bg-body-tertiary border-0 text-center" id="orderCount" value="1">
-
-                            <div class="input-group-btn">
-                                <button class="btn btn-plus btn-warning">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <label>2000 Kyats</label>
-                </div>
-                <div>
-                    <button class="btn btn-sm btn-remove remove"><i class="fa fa-times"></i></button>
-                </div>
-            </div>
-            <div class="cart-content d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center">
-                    <img src="image/drinks1.jfif" class="d-block" alt="">
-                    <div class="ms-3">
-                        <h5>Coca Cola</h5>
-                        <label for="">2000 Ks</label>
-                    </div>
-                </div>
-                <div id="order-count-btn" >
-                    <div class="d-flex align-items-center">
-                        <div class="input-group quantity" style="width: 130px;">
-                            <div class="input-group-btn">
-                                <button class="btn btn-minus btn-warning">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                            
-                            <input type="text" class="form-control bg-body-tertiary border-0 text-center" id="orderCount" value="1">
-
-                            <div class="input-group-btn">
-                                <button class="btn btn-plus btn-warning">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <label>2000 Kyats</label>
-                </div>
-                <div>
-                    <button class="btn btn-sm btn-remove remove"><i class="fa fa-times"></i></button>
-                </div>
-            </div>
-            <div class="cart-content d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center">
-                    <img src="image/movie-night-snack-board.jpg" class="d-block" alt="">
-                    <div class="ms-3">
-                        <h5>Popcorn lover</h5>
-                        <label for="">10000 Ks</label>
-                    </div>
-                </div>
-                <div id="order-count-btn" >
-                    <div class="d-flex align-items-center">
-                        <div class="input-group quantity" style="width: 130px;">
-                            <div class="input-group-btn">
-                                <button class="btn btn-minus btn-warning">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                            
-                            <input type="text" class="form-control bg-body-tertiary border-0 text-center" id="orderCount" value="1">
-
-                            <div class="input-group-btn">
-                                <button class="btn btn-plus btn-warning">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <label>10000 Kyats</label>
-                </div>
-                <div>
-                    <button class="btn btn-sm btn-remove remove"><i class="fa fa-times"></i></button>
-                </div>
-            </div>
-            <div class="pt-2">
-                <div class="d-flex justify-content-end my-2 me-5">
-                    <h5>Total:</h5>
-                    <h5 class="ms-3">0 Kyats</h5>
-                </div>
-                <div class="d-flex justify-content-end me-3">
-                    <button class="btn btn-warning w-25">
-                        <span>Confirm Order</span>
-                    </button>
-                    <button class="btn btn-danger w-25 ms-2">
-                        <span>Clear Cart</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="cart-details-ph">
-            <div class="cart-content-ph">
-                <div class="d-flex align-content-center justify-content-end mb-1">
-                    <button class="btn btn-sm btn-remove remove"><i class="fa fa-times"></i></button>
-                </div>
-                <div class="d-flex align-items-center">
-                    <img src="image/pop1.webp" class="d-block" alt="">
-                    <div class="ms-3">
-                        <h5>Butter Popcorn</h5>
-                        <label for="">3000 Ks</label>
-                        <p>Medium</p>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center mt-3">
-                    <div id="order-count-btn">
-                        <div class="d-flex align-items-center" style="width: 130px;">
-                            <div class="input-group quantity">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-minus btn-warning">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
-                                </div>
-                                
-                                <input type="text" class="form-control p-0 bg-body-tertiary border-0 text-center" id="orderCount" value="1">
-    
-                                <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-plus btn-warning">
-                                        <i class="fa fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ms-3">
-                        <label>Total: 3000 Ks</label>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-content-ph">
-                <div class="d-flex align-content-center justify-content-end mb-1">
-                    <button class="btn btn-sm btn-remove remove"><i class="fa fa-times"></i></button>
-                </div>
-                <div class="d-flex align-items-center">
-                    <img src="image/drinks1.jfif" class="d-block" alt="">
-                    <div class="ms-3">
-                        <h5>Coca Cola</h5>
-                        <label for="">2000 Ks</label>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center mt-3">
-                    <div id="order-count-btn">
-                        <div class="d-flex align-items-center" style="width: 130px;">
-                            <div class="input-group quantity">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-minus btn-warning">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
-                                </div>
-                                
-                                <input type="text" class="form-control p-0 bg-body-tertiary border-0 text-center" id="orderCount" value="1">
-    
-                                <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-plus btn-warning">
-                                        <i class="fa fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ms-3">
-                        <label>Total: 2000 Ks</label>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-content-ph">
-                <div class="d-flex align-content-center justify-content-end mb-1">
-                    <button class="btn btn-sm btn-remove remove"><i class="fa fa-times"></i></button>
-                </div>
-                <div class="d-flex align-items-center">
-                    <img src="image/drinks2.jpg" class="d-block" alt="">
-                    <div class="ms-3">
-                        <h5>Pepsi</h5>
-                        <label for="">2000 Ks</label>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center mt-3">
-                    <div id="order-count-btn">
-                        <div class="d-flex align-items-center" style="width: 130px;">
-                            <div class="input-group quantity">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-minus btn-warning">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
-                                </div>
-                                
-                                <input type="text" class="form-control p-0 bg-body-tertiary border-0 text-center" id="orderCount" value="1">
-    
-                                <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-plus btn-warning">
-                                        <i class="fa fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ms-3">
-                        <label>Total: 2000 Ks</label>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-content-ph">
-                <div class="d-flex align-content-center justify-content-end mb-1">
-                    <button class="btn btn-sm btn-remove remove"><i class="fa fa-times"></i></button>
-                </div>
-                <div class="d-flex align-items-center">
-                    <img src="image/movie-night-snack-board.jpg" class="d-block" alt="">
-                    <div class="ms-3">
-                        <h5>Popcorn Lover</h5>
-                        <label for="">10000 Ks</label>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center mt-3">
-                    <div id="order-count-btn">
-                        <div class="d-flex align-items-center" style="width: 130px;">
-                            <div class="input-group quantity">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-minus btn-warning">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
-                                </div>
-                                
-                                <input type="text" class="form-control p-0 bg-body-tertiary border-0 text-center" id="orderCount" value="1">
-    
-                                <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-plus btn-warning">
-                                        <i class="fa fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ms-3">
-                        <label>Total: 10000 Ks</label>
-                    </div>
-                </div>
-            </div>
-            <div class="pt-2">
-                <div class="d-flex justify-content-end my-2 me-5">
-                    <h5>Total:</h5>
-                    <h5 class="ms-3">0 Kyats</h5>
-                </div>
-                <div class="d-flex justify-content-end me-3" id="btns">
-                    <button class="btn w-25" id="confirm-btn">
-                        <span>Confirm Order</span>
-                    </button>
-                    <button class="btn btn-danger w-25 ms-2" id="clear-btn">
-                        <span>Clear Cart</span>
-                    </button>
+                <div class="col-lg-7 order-lg-1">
+                    
                 </div>
             </div>
         </div>
     </section>
-    <!-- snacks cart end  -->
+    <!-- payment section end  -->
 
 </body>
 
