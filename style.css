@@ -401,9 +401,6 @@ body{
     }
 }
 @media screen and (max-width: 373px){
-    /* #snack-cart > .d-flex h4{
-        font-size: 13pt;
-    } */
     #snack-cart > .d-flex i{
         margin-bottom: 5px;
     }
@@ -464,16 +461,6 @@ body{
 .size-active{
     background-color: #142b4be0 !important;
 }
-/* .input-group-btn button,
-#addCartBtn{
-    background-color: var(--gold);
-    color: black;
-}
-.input-group-btn button:hover,
-#addCartBtn:hover{
-    background-color: var(--gold);
-    color: black;
-} */
 @media screen and (max-width: 1200px){
     #snack-detail img{
         width: 350px;
@@ -519,6 +506,17 @@ body{
     }
     #addCartBtn{
         width: 100%;
+    }
+}
+@media screen and (max-width: 310px){
+    #snack-detail-content ul{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #snack-detail-content ul li{
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 /*.......................................... snack deatils end ................................. */
