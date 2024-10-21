@@ -168,6 +168,142 @@ body{
 /*.......................................... snack page end ................................... */
 
 /*.......................................... snack categories start ................................... */
+#order-location1{
+    position: relative;
+    margin: 80px auto;
+}
+#order-location2,
+#order-location3,
+#order-location4{
+    position: relative;
+    margin: 70px auto;
+}
+#order-location1 #o-location-n,
+#order-location2 #o-location-n,
+#order-location3 #o-location-n,
+#order-location4 #o-location-n{
+    margin-top: -15px;
+}
+#order-location1 > div:nth-child(1),
+#order-location2 > div:nth-child(1),
+#order-location3 > div:nth-child(1),
+#order-location4 > div:nth-child(1){
+    display: block;
+    width: 75%;
+    margin: auto;
+    height: 1px;
+    background-color: white;
+}
+#order-location2 span,
+#order-location3 span,
+#order-location4 span{
+    display: block;
+    width: 100%;
+}
+#order-location2 span:nth-child(1),
+#order-location3 span:nth-child(1),
+#order-location3 span:nth-child(2),
+#order-location4 span:nth-child(1),
+#order-location4 span:nth-child(2),
+#order-location4 span:nth-child(3){
+    border: 1px solid var(--gold);
+}
+#order-location1 label,
+#order-location2 label,
+#order-location3 label,
+#order-location4 label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--nav-bar);
+    color: white;
+}
+#order-location1 label:nth-child(1),
+#order-location2 label:nth-child(1),
+#order-location2 label:nth-child(2),
+#order-location3 label:nth-child(1),
+#order-location3 label:nth-child(2),
+#order-location3 label:nth-child(3),
+#order-location4 label:nth-child(1),
+#order-location4 label:nth-child(2),
+#order-location4 label:nth-child(3),
+#order-location4 label:nth-child(4){
+    background-color: var(--gold);
+    color: var(--nav-bar);
+}
+#o-location-n h6{
+    width: 100%;
+    text-align: center;
+}
+#order-location1 h6:nth-child(2),
+#order-location1 h6:nth-child(3),
+#order-location1 h6:nth-child(4),
+#order-location2 h6:nth-child(1),
+#order-location2 h6:nth-child(3),
+#order-location2 h6:nth-child(4),
+#order-location3 h6:nth-child(1),
+#order-location3 h6:nth-child(2),
+#order-location3 h6:nth-child(4),
+#order-location4 h6:nth-child(1),
+#order-location4 h6:nth-child(2),
+#order-location4 h6:nth-child(3){
+    color: #1c2f4a;
+}
+@media screen and (max-width: 480px){
+    #order-location1 #o-location-n > div:nth-child(2) > h6,
+    #order-location2 #o-location-n > div:nth-child(2) > h6,
+    #order-location3 #o-location-n > div:nth-child(2) > h6,
+    #order-location4 #o-location-n > div:nth-child(2) > h6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        margin: auto;
+        text-align: center;
+        font-size: 10pt;
+    }
+}
+@media screen and (max-width: 348px){
+    #order-location4 label{
+        width: 25px;
+        height: 25px;
+        font-size: 10pt;
+    }
+}
+
+#skip-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    background-color: var(--nav-bar);
+    padding: 10px;
+    border-radius: 8px;
+}
+@media screen and (max-width: 625px){
+    #skip-section{
+        display: block;
+        width: fit-content;
+        margin: auto;
+        text-align: left;
+    }
+    #skip-section > a{
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+    #skip-section button{
+        margin-top: 10px !important;
+    }
+}
+@media screen and (max-width: 480px){
+    #skip-section label{
+        font-size: 11pt;
+    }
+}
 #snack-category{
     margin: 60px auto;
 }
