@@ -232,7 +232,8 @@ body{
     padding: 3px 10px;
     font-size: 10pt;
 }
-.cart-btn{
+.cart-btn,
+.cart-btn:hover{
     background-color: var(--gold);
     color: black;
 }
@@ -375,6 +376,9 @@ body{
     #confirm-btn,
     #clear-btn{
         width: 100% !important;
+    }
+    #btns{
+        margin-right: 0 !important;
     }
 }
 @media screen and (max-width: 400px){
